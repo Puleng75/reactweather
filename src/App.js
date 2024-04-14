@@ -11,6 +11,7 @@ function App() {
   
       <footer>This project was coded by {" "}<a href="https://www.puleng.com" target="_blank" rel="noreferrer">Puleng Dlamini</a>and is
         {""} <a href="https://github.com/puleng75/WeatherAppReact" target="_blank" rel="noreferrer">Open-sourced on Github</a>
+        and {""} <a href="/" target="_blank" rel="noreferrer">Netlify</a>.
 </footer>
     </div>
     </div>
