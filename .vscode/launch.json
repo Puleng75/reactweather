@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        
+        {
+            "type": "msedge",
+            "name": "http://c03face7caa58a9b7ffa9f52b7238a93",
+            "request": "launch",
+            "url": "http://c03face7caa58a9b7ffa9f52b7238a93"
+        }
+    ]
+}

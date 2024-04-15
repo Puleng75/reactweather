@@ -13,7 +13,7 @@ export default function Weather(props) {
     setWeatherData({
       ready: true,
       coordinates: response.data.coord,
-      temperature: response.data.main.temp,
+      temperature: response.data.temperature,
       humidity: response.data.main.humidity,
       date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
@@ -33,11 +33,10 @@ export default function Weather(props) {
   }
 
   function search() {
-    const apiKey = "e08ff04e756ab6a30t3eb7172o1c9fa9";
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
-    axios.get(apiUrl).then(handleResponse).catch(error => {
-      console.error("Error fetching weather data: ", error);
-    });
+  
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=c03face7caa58a9b7ffa9f52b7238a93&units=metric`;
+    axios.get(apiUrl).then(handleResponse);
+    
   }
 
 
