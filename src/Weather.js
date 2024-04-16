@@ -33,8 +33,7 @@ export default function Weather(props) {
   }
 
   function search() {
-  
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=c03face7caa58a9b7ffa9f52b7238a93&units=metric`;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Pretoria&appid=c03face7caa58a9b7ffa9f52b7238a93&units=metric`;
     axios.get(apiUrl).then(handleResponse);
     
   }
